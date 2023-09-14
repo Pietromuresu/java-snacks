@@ -13,24 +13,31 @@ public class Snack7 {
 		System.out.println("Type seconds to convert here: ");
 		int seconds = sc.nextInt();
 		
+		
+		// inizializzo le variabili che mi servono
 		double hours = 0d;
 		
 		double minutesCalculated = 0d;
 		double secondsCalculated = 0d;
 		
+		
+		// Se i secondi sono maggiori di 60(1 minuto) Calcolo i minuti e poi le ore
 		if(seconds > 60) {
+			// Totale dei minuti
 			double grossMinutes = seconds / 60d;
-			System.out.println(grossMinutes);
-			hours = grossMinutes / 60;
-			System.out.println(hours);
-			minutesCalculated = (hours - Math.floor(hours)) * 60;
-			System.out.println(minutesCalculated);
 
+			// Totale delle ore ricavate dai minuti
+			hours = grossMinutes / 60;
+			
+			// sottraggo l'intero in modo da avere solo i decimali e li moltiplico per 60 in modo da avere i minuti reali
+			minutesCalculated = (hours - Math.floor(hours)) * 60;
+			
+			// Sottraggo di nuovo l'intero in modo da avere solo i decimali e li moltiplico per 60 in modo da avere i secondi reali 
 			secondsCalculated = (minutesCalculated - Math.floor(minutesCalculated)) * 60;
-			System.out.println(secondsCalculated);
 			 
 		}
 		
+		// Mostro il risultato a schermo
 		System.out.println("Secondi: " + seconds + "-> Orario convertito: " + String.format("%.00f", Math.floor(hours)) +":" +  String.format("%.00f", Math.floor(minutesCalculated)) + ":" + String.format("%.00f", Math.floor(secondsCalculated)));
 				
 				

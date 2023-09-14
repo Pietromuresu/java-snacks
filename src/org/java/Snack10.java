@@ -14,10 +14,12 @@ public class Snack10 {
 		int[] arrayNums = new int[10];
 		
 		
+		// Popolo l'array
 		for(int i = 0; i < arrayNums.length; i++) {
 			arrayNums[i] = rand.nextInt(100, 1000);	
 		}
 		
+		// Stampo i numeri pari
 		System.out.println("\n Numeri pari: ");
 		for(int i = 0; i < arrayNums.length; i++) {
 			
@@ -26,7 +28,8 @@ public class Snack10 {
 				System.out.println("-" + arrayNums[i]);	
 			}
 		}
-
+		
+		// Stampo i numeri dispari
 		System.out.println("\n Numeri dispari: ");
 		for(int i = 0; i < arrayNums.length; i++) {
 			if(arrayNums[i] % 2 != 0) {
@@ -35,7 +38,7 @@ public class Snack10 {
 			}	
 		}
 
-
+		// Stampo i numeri  con indice pari
 		System.out.println("\n Numeri con indice pari: ");
 		for(int i = 0; i < arrayNums.length; i++) {
 			if(i % 2 == 0) {
@@ -44,7 +47,7 @@ public class Snack10 {
 			}
 		}
 
-
+		// Stampo i numeri  con indice dispari
 		System.out.println("\nNumeri con indice dispari: ");
 		for(int i = 0; i < arrayNums.length; i++) {
 			if(i % 2 != 0) {

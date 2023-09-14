@@ -18,11 +18,13 @@ public class Snack8 {
 		int avg = 0;
 		
 		
+		// Popolo l'array
 		for(int i = 0; i < arrayNum.length; i++) {
 			arrayNum[i] = rand.nextInt(100, 150);
 		}
 		
 		
+		// Imposto le variabili per il valore massimo e quello minimo come il primo elemento dell'array 
 		int max = arrayNum[0];
 		int min = arrayNum[0];
 
@@ -30,17 +32,23 @@ public class Snack8 {
 		for(int i = 0; i < arrayNum.length; i++) {
 		
 			System.out.println(i + ". " + arrayNum[i]);
+			
+			// Sommo i valori per calolare la media
+			sum += arrayNum[i];
+			
+			// Se il valore è maggiore del valore corrente il max assume il valore del maggiore 
 			if(arrayNum[i] > max) {
 				max = arrayNum[i];
 			}
-			
+
+			// Se il valore è minore del valore corrente il min assume il valore del minore
 			if(arrayNum[i] < min) {
 				min = arrayNum[i];
 			}
 		}
 		
-		
-		avg /= arrayNum.length;
+		// Calcolo la media
+		avg = sum / arrayNum.length;
 		
 		
 		System.out.println("Average: " + avg);

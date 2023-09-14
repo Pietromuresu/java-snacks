@@ -22,7 +22,12 @@ public class Snack6 {
 		
 		int intNum = 0;
 		
+		// Faccio un ciclo for sul numero inserito 
 		for(int i = 0; i < number.length(); i++) {
+			
+			// Faccio il casting del carattere con indice equivalente alla 'i' in modo da avere un intero e controllo che posizione ha nella tabella ASCII
+			// Sottraggo il 48 che sarebbe il codice corrispondente allo '0' nella tabella ASCII in modo da avere il numero sottoforma di intero
+			// moltiplico per 10 in modo da avere il numero successivo all'indice corretto
 			
 			intNum = (intNum * 10 ) + ((int)number.charAt(i) - 48);
 			

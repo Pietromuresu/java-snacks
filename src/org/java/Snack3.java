@@ -15,13 +15,18 @@ public class Snack3 {
 		int[] intList = new int[maxLength];
 		int oddSum = 0;
 		
+		
+		// Popolo l'array
 		for(int i = 0; i < maxLength; i++) {
 			intList[i] = rand.nextInt(1000);
 			
 		}
 		
+		
+		
 		System.out.println("The list: " + Arrays.toString(intList));
 		
+		// Sommo il numero ogni volta che la 'i' è dispari 
 		for(int i = 0; i < intList.length; i++) {
 			if(i % 2 != 0) {
 				oddSum += intList[i];

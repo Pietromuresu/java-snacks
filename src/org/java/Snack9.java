@@ -13,6 +13,7 @@ public class Snack9 {
 		
 		int sum = 0;
 		
+		// Continuo a chiedere un nuovo numero fino a quando la somma non ha superato il 1000.
 		do{
 
 		System.out.print("Digita un numero da sommare: ");

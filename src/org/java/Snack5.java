@@ -23,8 +23,12 @@ public class Snack5 {
 		int countLetters = 0;
 		int countNonAlphanum = 0;
 		
+		// Faccio un ciclo for sulla parola inserita
 		for(int i = 0; i < word.length(); i++) {
 			
+			
+			// controllo se il carattere in questione è un lettera o un numero ed altrimenti si assume sia un carattere speciale
+			// in ogni caso si incrementa l'int corrispondente
 			if(Character.isDigit(word.charAt(i))) {
 				countNumbers++;
 			}else if(Character.isLetter(word.charAt(i))){
@@ -34,10 +38,13 @@ public class Snack5 {
 			}
 		}
 			
+		// Stampo i risultati 
 		System.out.println("Numbers: " + countNumbers);
 		System.out.println("Letters: " + countLetters);
 		System.out.println("Specials: " + countNonAlphanum);
 		
+		
+		// se la parola inserita è diversa da '0' faccio ripartire la funzione
 		if(!word.equals("0")) {
 				Snack5.main(args);
 		}
