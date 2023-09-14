@@ -11,6 +11,18 @@ public class Snack9 {
 		
 		Scanner sc = new Scanner(System.in);
 		
+		int sum = 0;
+		
+		do{
+
+		System.out.print("Digita un numero da sommare: ");
+		int num = sc.nextInt();
+		
+		sum += num;
+			
+		}while(sum <= 1000);
+		
+		System.out.print("Somma finale: " + sum);
 		
 	}
 }
