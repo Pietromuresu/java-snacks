@@ -20,7 +20,15 @@ public class Snack6 {
 		System.out.println("Type a number to convert in a string: ");
 		String number = sc.next();
 		
+		int intNum = 0;
 		
-		int numberInt = (int)number.charAt(0) ;
+		for(int i = 0; i < number.length(); i++) {
+			
+			intNum = (intNum * 10 ) + ((int)number.charAt(i) - 48);
+			
+		}
+		
+		System.out.println(intNum);
+		
 	}
 }
