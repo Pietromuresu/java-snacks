@@ -15,6 +15,7 @@ public class Snack5 {
 		
 		Scanner sc = new Scanner(System.in);
 		
+		
 		System.out.println("Write a string here: ");
 		String word = sc.next();
 		
@@ -32,11 +33,14 @@ public class Snack5 {
 				countNonAlphanum++;
 			}
 		}
-		
-		
+			
 		System.out.println("Numbers: " + countNumbers);
 		System.out.println("Letters: " + countLetters);
 		System.out.println("Specials: " + countNonAlphanum);
+		
+		if(!word.equals("0")) {
+				Snack5.main(args);
+		}
 		
 	}
 }
